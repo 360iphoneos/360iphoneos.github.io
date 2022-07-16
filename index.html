@@ -21,95 +21,15 @@
 <script> var jq = jQuery.noConflict();</script>
 <script src="https://360iphoneos.github.io/js/common.js" type="text/javascript"></script>
 
-        <link rel="archives" title="360社区" href="https://bbs.360.cn/archiver/" />
-<script src="https://360iphoneos.github.io/js/forum.js" type="text/javascript"></script>
-       <!-- 
-	   <script>
-            function mySayGood (e) {
-            	var x = e.clientX;
-            	var y = e.clientY;
-                var countObj = jq('#myZanCountsSpan');
-                jq.ajax({
-                    url:'apkapi/quotation.php',
-                    type:"post",
-                    dataType:"json",
-                    data:{op:'saygood'},
-                    success:function (msg) {
-                        if (msg.rs==='success'){
-                            countObj.html(parseInt(countObj.html())+1);
-                        }else{
-                        	alerts.show(msg.info,x,y);
-                            alerts.hide();
-                        }
-                    }
-                });
-            }
-            
-            var alerts = new Object();
-            alerts.id = "alterts_"+parseInt(1000*Math.random());
-            alerts.show = function (str,x,y) {
-            	var div=document.createElement('div');
-                div.id = this.id;
-                div.style.position =  "absolute"; //position: absolute;
-                div.style.top=(y-40)+"px";
-                div.style.left=(x+5)+"px";
-                div.style.background="#fff";
-                div.style.padding="5px 10px";
-                div.style.boxShadow="2px 2px 5px rgba(0,0,0,0.3)"; //box-shadow: 10px 10px 5px #888888;
-                div.style.borderRadius="5px";
-                
-                div.innerHTML = str;
-                document.body.appendChild(div);
-            }
-            alerts.hide = function () {
-                setTimeout(function(){
-                    jq("#"+alerts.id).hide(500,function(){
-                        document.body.removeChild(document.getElementById(alerts.id));
-                    });
-                },2000);
-            }
-            var coolyunAttachment = '1'=='1' ? "yes" : "no";
-            var coolyunS0 = 'file.coolyun.com';
-            var coolyunS1 = 'd1.coolyun.com';
-var coolyunS2 = 'file.c.qikucdn.com';
-        </script>
-        -->
+
+
+      
 </head>
 
 <body id="nv_forum" class="pg_romproduct" onkeydown="if(event.keyCode==27) return false;">
 
 
-<script>
-if(loadUserdata("apk_download_again")!=1){
-jQuery(".apk-download").show();
-}
-if(jQuery(".apk-download").length>0){
-jQuery(".apk-download-close").click(function(){
-jQuery(".apk-download").slideUp(500);
-saveUserdata("apk_download_again",1);
-});
-}
-function existmobile(){
-var mobile = true;
-jQuery.ajax({
-type:'get',
-url:'api/bindmobile.php',
-async: false,
-dataType:'json',
-success:function(data){
-if(data.ret_no === 1){
-jQuery(".bind-phonenum-pannel").css('display','block');
-mobile = false;
-}else if(data.ret_no === 2){
-jQuery("#qiku_bindmobile").val(data.ret_data);
-jQuery(".bind-phonenum-pannel").css('display','block');
-mobile = false;
-}
-}
-})
-return mobile;
-}
-</script>
+
 
 
 
@@ -124,7 +44,6 @@ return mobile;
             <div class="xm_headerInner headerInner">                <div class="cl ">
                     <div class="logo" id="logo">
                         <a href="//bbs.360.cn/"> <img src="https://b1.qikucdn.com/dfsj_imgs/indeximg/qiku_community_logo.png?N39" alt=""></a>
-                        <!-- 签到 delete by fengyuan -->
                     </div>
                   
                    
