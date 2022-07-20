@@ -16,15 +16,16 @@
     <base href="https://bbs.360.cn/" />
     <link rel="stylesheet" type="text/css" href="https://360iphoneos.github.io/css/style_4_common.css"
     />
-    <!--？
-    <link rel="stylesheet" type="text/css" href="https://360iphoneos.github.io/css/style_4_forum_romproduct.css"
+    <!--？ <link rel="stylesheet" type="text/css" href="https://360iphoneos.github.io/css/style_4_forum_romproduct.css"
     />
     <script src="https://360iphoneos.github.io/js/jquery.min.js" type="text/javascript">
     </script>
     <script>
       var jq = jQuery.noConflict();
-    </script>-->
-    <script src="https://360iphoneos.github.io/js/common.js" type="text/javascript"></script>
+    </script>
+    -->
+    <script src="https://360iphoneos.github.io/js/common.js" type="text/javascript">
+    </script>
   </head>
   
   <body id="nv_forum" class="pg_romproduct" onkeydown="if(event.keyCode==27) return false;">
@@ -107,10 +108,11 @@
               </li>
               <li>
                 <a target="_blank" href="https://bbs.360.cn/forum.php?mod=romdetail&productid=37">
-                 <img src="https://p0.ssl.qhmsg.com/t01ce509c0f912cd812.png">
-                 <p>360手机 vizza</p>
+                  <img src="https://p0.ssl.qhmsg.com/t01ce509c0f912cd812.png">
+                  <p>
+                    360手机 vizza
+                  </p>
                 </a>
-
               </li>
               <li>
                 <a target="_blank" href="https://360iphoneos.github.io/360os/360n5s/360n5s.html">
@@ -274,14 +276,32 @@
               <div class="links">
                 <a href="" target="_blank">
                 </a>
-				<font size="2">
-                声明：本界面及所有内容仅为复刻和精简版的备份，与官方无任何关联，仅为信息和资源方便，邮件:andyou666@foxmail.com
-                </br>
-                主要含：N4S骁龙版、N5、N5S、N6、N6Lite、N6PRO、N7、N7Lite、N7PRO、Q5、Q5Plus
-                </br>
-                特注：随时间的流逝，官方某些服务可能不支持/关闭，用户无法使用(如刷机) </br>
-				刷机支持（版本&机型不限）微信: Wander-WeCHat</font>
+                <font size="3" color="red">
+                  声明：本界面及内容仅为复刻和精简版的备份，与官方无任何关联
+                </font>
+                <font size="3" color="">
+                  </br>
+                  邮件:andyou666@foxmail.com
+                  </br>
+                  主含刷机包：N4S骁龙版、N5、N5S、N6、N6Lite、N6PRO、N7、N7Lite、N7PRO、Q5、Q5Plus
+                  </br>
+                  注：随时间的流逝，官方某些服务可能不支持/关闭，用户无法使用
+                  </br>
+                  <b>
+                    最新刷机支持（版本&机型不限（付费）微信: Wander-WeChat
+                  </b>
+                </font>
               </div>
+              <hr>
+              <p>
+                现在时间：
+                <span id="cg">
+                  1999/4/21/ AM12:00:00
+                </span>
+                <script>
+                  setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
+                </script>
+              </p>
             </div>
           </div>
         </div>
