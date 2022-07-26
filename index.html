@@ -14,8 +14,8 @@
     <meta http-equiv="MSThemeCompatible" content="Yes" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <base href="https://360iphoneos.github.io" />
+    <link rel="stylesheet" href="https://360iphoneos.github.io/homepagestyle.css">
     <link rel="stylesheet" type="text/css" href="https://360iphoneos.github.io/css/style_4_common.css"
-    />
     <!--？ <link rel="stylesheet" type="text/css" href="https://360iphoneos.github.io/css/style_4_forum_romproduct.css"
     />
     <script src="https://360iphoneos.github.io/js/jquery.min.js" type="text/javascript">
@@ -27,78 +27,77 @@
     <script src="https://360iphoneos.github.io/js/common.js" type="text/javascript">
     </script>
   </head>
- <!--参考51前端 禁止代码   -->
-<script type="text/javascript">
-//iframe内部禁止方法
-window.onload=function(){
+  <!--参考51前端 禁止代码 -->
+  <script type="text/javascript">
+    //iframe内部禁止方法
+window.onload = function() {
 
-  document.getElementById('iframe').contentDocument.onkeydown = function(ev){
-	 
-	//禁止保存ctrl+s
-	if (ev && (ev.ctrlKey || ev.metaKey) && (ev.keyCode == 83)) {
-		alert("权限禁止...");
-		return false;
-	}
-	//禁止F12等等~~
-    if(ev && (ev.keyCode == 123 || ev.keyCode == 8 || ev.keyCode == 9 || ev.keyCode == 13) ) {
-	    alert("权限禁止...");
-	    return false;
-    }	
+    document.getElementById('iframe').contentDocument.onkeydown = function(ev) {
 
-	
-  }
-  //禁止右键
-  document.getElementById('iframe').contentDocument.oncontextmenu = function(){ 
-    alert("360手机刷机 微信: Wander-WeChat");
-    return false;
-  } 
-  
+            //禁止保存ctrl+s
+            if (ev && (ev.ctrlKey || ev.metaKey) && (ev.keyCode == 83)) {
+                alert("权限禁止...");
+                return false;
+            }
+            //禁止F12等等~~
+            if (ev && (ev.keyCode == 123 || ev.keyCode == 8 || ev.keyCode == 9 || ev.keyCode == 13)) {
+                alert("权限禁止...");
+                return false;
+            }
+
+
+        }
+        //禁止右键
+    document.getElementById('iframe').contentDocument.oncontextmenu = function() {
+        alert("360手机刷机 微信: Wander-WeChat");
+        return false;
+    }
+
 }
 
 
 //iframe外部禁止
-document.onkeydown = function(){/*9:Tab键, 17：Control键, 18:Alt键, 123:F12键, 83:S键*/
-	
+document.onkeydown = function() { /*9:Tab键, 17：Control键, 18:Alt键, 123:F12键, 83:S键*/
+
     //禁止保存ctrl+s
-	if (window.event && (window.event.ctrlKey || window.event.metaKey) && (window.event.keyCode == 83)) {
-		alert("360手机刷机 微信: Wander-WeChat");
-		return false;
-	}
-	
-	//禁止F12等等~~
-if(window.event && (window.event.keyCode == 123 || window.event.keyCode == 8 || window.event.keyCode == 9 || window.event.keyCode == 13)) {
+    if (window.event && (window.event.ctrlKey || window.event.metaKey) && (window.event.keyCode == 83)) {
         alert("360手机刷机 微信: Wander-WeChat");
-        window.event.returnValue=false;
+        return false;
+    }
+
+    //禁止F12等等~~
+    if (window.event && (window.event.keyCode == 123 || window.event.keyCode == 8 || window.event.keyCode == 9 || window.event.keyCode == 13)) {
+        alert("360手机刷机 微信: Wander-WeChat");
+        window.event.returnValue = false;
     }
 }
 
 
 //屏蔽右键
-document.oncontextmenu = function (event){
-    if(window.event){
-    event = window.event;
+document.oncontextmenu = function(event) {
+    if (window.event) {
+        event = window.event;
     }
-    try{
-    var the = event.srcElement;
-        if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
-        return false;
+    try {
+        var the = event.srcElement;
+        if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+            return false;
         }
         return true;
-    }
-    catch (e){
+    } catch (e) {
         return false;
     }
 }
-</script>
+  </script>
+  
   <body id="nv_forum" class="pg_romproduct" onkeydown="if(event.keyCode==27) return false;">
     <!--顶部横条信息-->
     <div class="xm_header_top">
-<script>
-<!--
+      <script>
+        <!--
 document.write(unescape("%3Cp%20class%3D%22xm_header_top_ul%22%3E%0A%20%20%20%20%20%3Cp%20align%3D%22left%22%3E%0A%09%20%3Cspan%20class%3D%22pipe-head%22%3E%3Cfont%20size%3D%222%22%20color%3D%22%23FFFFFF%22%3E360%u624B%u673A%u5237%u673A%26%u6551%u7816%26%u53BB%u5E7F%u544A%u3001Root%u3001Twrp%20%u5FAE%u4FE1%3A%20Wander-WeChat%3C/p%3E%3C/span%3E%0A%09%20%20%3C/p%3E"));
 //-->
-</script>
-
+      </script>
       <!-- <p class="xm_header_top_ul">
       <span> <a href="//www.360.com/" target="_blank">360官网</a> <span class="pipe-head">|</span> </span>
       <span> <a href="//mall.360.cn/?utm_source=SQDH007" target="_blank">360商城</a> 
@@ -349,13 +348,30 @@ document.write(unescape("%3Cp%20class%3D%22xm_header_top_ul%22%3E%0A%20%20%20%20
                 </font>
                 <font size="3" color="">
                   </br>
-                <a href="javascript:;"  onclick="alert('Wander-WeChat')">微信</a> | 
-				<a href="javascript:;" onclick="alert('andyou666@foxmail.com')">邮件</a> | 
-	            <a target="_blank" href="https://360iphoneos.github.io/src/pay.html">打赏</a> | 
-				<a href="http://b23.tv/Dia3cRk" target="_blank">参考视频 </a> | 
-				<a href="javascript:;" onclick="alert('一个待写的故事&模态框')">关于</a> | 
-	            By.SmilingJesus
-
+                  <a href="javascript:;" onclick="alert('Wander-WeChat')">
+                    微信
+                  </a>
+                  |
+                  <a href="javascript:;" onclick="alert('andyou666@foxmail.com')">
+                    邮件
+                  </a>
+                  |
+                  <a target="_blank" href="https://360iphoneos.github.io/src/pay.html">
+                    打赏
+                  </a>
+                  |
+                  <a href="http://b23.tv/Dia3cRk" target="_blank">
+                    参考视频
+                  </a>
+                  |
+                  <font size="3" color="">
+                    <button id="triggerBtn">
+                      关于
+                  </font>
+                  </button>
+                  |
+                  <!-- 模态框 -->
+                  By.SmilingJesus
                   </br>
                   主含刷机包：N4S骁龙版、N5、N5S、N6、N6Lite、N6PRO、N7、N7Lite、N7PRO、Q5、Q5Plus
                   </br>
@@ -376,10 +392,119 @@ document.write(unescape("%3Cp%20class%3D%22xm_header_top_ul%22%3E%0A%20%20%20%20
                 <span id="cg">
                   1999/4/21/ AM12:00:00
                 </span>
+                <!-- 模态框 -->
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <span id="closeBtn" class="close">
+                      ×
+                    </span>
+                    <div class="modal-body">
+                      <div style="text-align:left;">
+                        <p>
+                          <font size="3" color="" style="line-height:2em;">
+                            让时间回退到2018年上旬...
+                            <br>
+                            <p style="text-indent:2em;">
+                              <font style="line-height:2em;">
+                                北冬，缺乏一丝春夏雅韵；啸裂随风，以雪萧物，万物寂静
+                                <p style="text-indent:2em;">
+                                  <font style="line-height:2em;">
+                                    18年上旬，自费全部家当，京东官方店1200-1400（具体数额忘却）购买的N6 4+64G， 因其为第一部，使用也很爱惜，习惯性关机充电，也会看是否有充电界面，但数次发生过充电失败，手机发热现象
+                                    <p style="text-indent:2em;">
+                                      <font style="line-height:2em;">
+                                        可惜，因不慎，不到一月，即摔破屏幕外屏，贴合钢化膜存空隙，致浪费居多钢化膜， 随后数月到半年之内，数据线和尾插小板相继坏掉，因缺乏经验，拆机的意外，
+                                        导致指纹排线断裂，将就着又使用穷用一年有余(那时，该指纹淘宝/拼多多也得60-90左右）
+                                        <p style="text-indent:2em;">
+                                          <font style="line-height:2em;">
+                                            带着它，步入了所谓的大学；同宿舍之间，也只有自用的手机配置落后，其它所物也同理(毕竟，经济和观念条件非同)， 在此，也渐渐感到在摩尔定律下，4GB运存的卡顿（或软件安装过多），后倒换了6GB运存的主板，有所改善
+                                            <p style="text-indent:2em;">
+                                              <font style="line-height:2em;">
+                                                应是18年后旬，手机莫名广告，下意识以为中毒，尝试杀软和恢复出厂设置，似无大用， 后经论坛教程，去&关闭广告，折腾过Root和Twrp；但最终选择刷入官版纯净系统；
+                                                在这几年内，尾插小板更换居多，后盖尾插部分也自破损，打补丁似的，修修补补仍在穷用，像是在填坑
+                                                <p style="text-indent:2em;">
+                                                  <font style="line-height:2em;">
+                                                    又因前期不慎摔屏，导致触屏偏右下部分失灵和破碎，换原装屏幕总成，彻底拆机，才发现主板排线，被记号笔标记过（修过的手机，维修行业都会做标记）,
+                                                    但从购买到退役期间，从未找任何人维修过，后期，不知为何，充电器也突然失效坏掉，后摄像模糊污点（很少拍照）
+                                                    <p style="text-indent:2em;">
+                                                      <font style="line-height:2em;">
+                                                        终在2022年正式退役；后在该领域有所肤浅了解，才知N6的处理器，不如前一代高，360手机也创业未半...
+                                                        <p style="text-indent:2em;">
+                                                          <font style="line-height:2em;">
+                                                            但后期，仍旧入手多部二手360手机（大电池、软件分身、相对价格），却不知21年左右，官方关闭了刷机渠道， 后经长达4.5月之久的研究，才掌握新的刷机方法，成功率99.99%，不限机型，带来一些使用便捷
+                                                            <p style="text-indent:2em;">
+                                                              <font style="line-height:2em;">
+                                                                至现在，360手机业务的暂停，创业中途的失意（竞争总是残酷的），相关软&硬件，服务的关闭和停滞维护...
+                                                                <p style="text-indent:2em;">
+                                                                  <font style="line-height:2em;">
+                                                                    性价比或是一种选择，但在某些地方，事&物总要在天平两端倾平；小众也是一种市场&选择
+                                                                </p>
+                      </div>
+                      <p>
+                        <font style="line-height:1;">
+                          <p style="text-align:right;">
+                            <font size="3" color="#A4A4A4" style="line-height:3;">
+                              如本站/页无意侵权，请联系并出示相关所有权，做删除处理
+                            </font>
+                          </p>
+                          <p style="text-indent:2em;">
+                            <font style="line-height:1.5;">
+                              温馨提示:点击框外或回退顶部X均可退出
+                          </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 模型框js -->
+                <script type="text/javascript" src="modalBox.js">
+                </script>
+                <script>
+                  (function() {
+    /*建立模态框对象*/
+    var modalBox = {};
+    /*获取模态框*/
+    modalBox.modal = document.getElementById("myModal");
+    /*获得trigger按钮*/
+    modalBox.triggerBtn = document.getElementById("triggerBtn");
+    /*获得关闭按钮*/
+    modalBox.closeBtn = document.getElementById("closeBtn");
+    /*模态框显示*/
+    modalBox.show = function() {
+            console.log(this.modal);
+            this.modal.style.display = "block";
+        }
+        /*模态框关闭*/
+    modalBox.close = function() {
+            this.modal.style.display = "none";
+        }
+        /*当用户点击模态框内容之外的区域，模态框也会关闭*/
+    modalBox.outsideClick = function() {
+            var modal = this.modal;
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+        /*模态框初始化*/
+    modalBox.init = function() {
+        var that = this;
+        this.triggerBtn.onclick = function() {
+            that.show();
+        }
+        this.closeBtn.onclick = function() {
+            that.close();
+        }
+        this.outsideClick();
+    }
+    modalBox.init();
+
+})();
+                </script>
                 <script>
                   setInterval("cg.innerHTML=new Date().toLocaleString()", 1000);
                 </script>
-              </p>
+                </p>
             </div>
           </div>
         </div>
