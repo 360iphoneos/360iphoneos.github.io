@@ -85,7 +85,7 @@
 	-webkit-user-select:none;
 	-o-user-select:none;
 	user-select:none;
-	background:url(https://360iphoneos.github.io/src/webmp3/css/audio_sprite.png) no-repeat 0 9999px;
+	background:url(https://360iphoneos.github.io/src/webmp3/img/audio_sprite.png) no-repeat 0 9999px;
 }
 #player .ctrl .icon:hover,#player .ctrl .icon.enable {
 	opacity:1
@@ -200,7 +200,7 @@
 	height:20px;
 	top:20px;
 	position:relative;
-	background:transparent url("https://360iphoneos.github.io/src/webmp3/css/2.png") repeat scroll 0% 0%;
+	background:transparent url("https://360iphoneos.github.io/src/webmp3/img/2.png") repeat scroll 0% 0%;
 }
 #pContent .ssBtn .adf.on {
 	transform:rotate(180deg);
