@@ -85,7 +85,7 @@
 	-webkit-user-select:none;
 	-o-user-select:none;
 	user-select:none;
-	background:url("https://360iphoneos.github.io/src/webmp3/css/audio_sprite.png") no-repeat 0 9999px;
+	background:url(https://360iphoneos.github.io/src/webmp3/css/audio_sprite.png) no-repeat 0 9999px;
 }
 #player .ctrl .icon:hover,#player .ctrl .icon.enable {
 	opacity:1
