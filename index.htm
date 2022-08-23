@@ -1,0 +1,660 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyWebResume在线简历预览-综合版</title>
+    <meta name="theme-color" content="#ffc91d" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="favicon.png" type="image/x-icon" rel="shortcut icon" />
+    <link href="css/kico.css" rel="stylesheet" type="text/css" />
+    <link href="css/paul.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/styler.css" />
+    <link rel="stylesheet" href="css/night-mode.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@2.1.9/css/unicons.css" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1" />
+    </script>
+    <!--原简单加密
+  <script type="text/javascript">   
+loopy()   
+function loopy() {   
+var sWord =""  
+while (sWord != "0") {//设置密码 //alert("")   
+sWord = prompt("请输入 授权码 访问！")   
+}   
+
+}   
+</script> -->
+    <style>
+      <!--鼠标样式图 -->
+      	body{
+                  cursor:url(images/mouse.ico),default;
+              }
+              a:hover {
+                  cursor:url(images/mouse.ico),default;
+              }
+    </style>
+    <!--网页底部渲染文本 -->
+    <style type="text/css">
+      *{
+        padding: 0;
+        margin: 0;
+      }*
+      .gcs-footer{
+          font-size:14px;
+      	text-align:center;
+          margin-top: 0px;
+          width: 100%;
+		  /*底部高x宽设定*/
+          height: 21px;
+      	color:	#FFFFFF;
+      	background-color:#333333;"
+      	position: absolute;
+      }
+      .gcs-footer .footer-top{
+        margin-top: 0px;
+      }
+      .gcs-footer a{
+        color: #f0f1f1;
+        text-decoration: none;
+        padding: 0 10px;
+        vertical-align:middle;
+      }
+      .gcs-footer a:hover{
+        color: red;
+        text-decoration: underline;
+      }
+      .gcs-footer p{
+        height: 15px;
+        color: #888888;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <!--禁止复制 -->
+  <body onselectstart="return false;" oncontextmenu="alert('禁止复制&amp;查看');return false;" onkeydown="if(event.keyCode==27) return false;" onmousemove="/HideMenu()/" ondragstart="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
+    <!--onselectstart:禁止选中 oncontextmenu:右键弹出版权 event.keyCode==27:按esc键表示放弃Esc键阻止网页继续载入,也就是说你按ESC键网页还是继续加载-->
+    <script type="text/javascript">
+      document.onmousedown = click;  //绑定禁用鼠标右键事件
+      document.onkeydown = ctrl_key; //绑定禁用键盘事件
+      function click() {
+      if (event.button == 2)      //单击的鼠标键为右键
+      {
+      alert('禁止右键&查看');
+      return false;
+      }
+      }
+      function ctrl_key() {
+      if (event.keyCode == 17) {                          //禁用CTRL+S 保存网页代码
+      window.alert("禁止保存&查看");
+      return false;
+      }
+       
+      if (event.keyCode == 123) {                         //禁用F12查看源代码
+      alert('禁止F12&查看');
+      return false;
+      }
+      }
+    </script>
+    <!--公告滚动|鼠标控制  onMouseOut="this.start();"
+                 onMouseOver="this.stop();">  
+  <marquee align="right" direction="left" scrollamount="10" scrolldelay="130" loop="1" width="" height="25" bgcolor="#FFFACD" hspace="10" vspace="10" <p="">
+   <font size="3" color="#FF6A6A"><b>Tips</b>:致敬：本Web版简历，仅作展示&amp;参考，只为方便相关; 但近期短信/电话收到另类消息较多，请不要做无谓的﹥信息采集﹤◐◑三无人群之一●▽●... 推荐浏览器打开;简历&amp;个人仍有不足之处，烦请海涵</font> 
+   <p></p> 
+  </marquee> -->
+    <!-- 左边导航代码开始 | <link rel="icon" href="images/32.png" sizes="32x32">-->
+    <aside class="sidebar">
+      <div class="avatar">
+        <img src="images/avatar.jpg" title="icon" />
+      </div>
+      <nav class="nav">
+        <a href="#info">&gt; 个人资料</a>
+        <a href="#skills">&gt; 掌握技能</a>
+        <a href="#story">&gt; 个人经历</a>
+        <a href="#works">&gt; 我的参列</a>
+        <a href="#team">&gt; 关于我的</a>
+           <!-- 原暗夜模式,后有问题 
+	   <div class="head_user">
+          <a href="#" id="night-mode" class="opts_icon">
+            <i class="uil-sun"></i>
+            <i class="uil-wind-moon"></i>
+          </a>
+        </div>-->
+      </nav>
+    </aside>
+    <!-- 个人资料代码开始 -->
+    <main>
+      <section id="info">
+        <div class="wrap">
+          <h2 class="title">认识一下</h2>
+          <div class="row">
+            <div class="col-l-4">
+              <p>姓名：　<script>
+                  <!--
+                   document.write(unescape("%u5F6D%u535A"));
+                  //-->
+                </script>　</p>
+              <p>身高/生日：165CM/1999.04</p>
+              <p>籍贯/性别：山西/男</p>
+              <p>政治面貌/身体情况：团员/健康</p>
+              <details>
+                <summary>教育经历:</summary>
+                <p>本科:/专业</p>
+                <p>专科(全日制/统招):天津交通职业学院/专业:数字媒体应用技术（2018.09-2021.07）</p>
+				<details>
+                <summary>专业与课程简述:</summary>
+                <p>
+                  <font size="2" color="">&#8194; &#8194; 使用电脑类设计软件；浅涉平面设计、二维、三维内容领域</font>
+                </p>
+              </details>
+			    <details>
+                <summary>所学课程:</summary>
+                <p>
+                  <font size="1" color="">&#8194; &#8194; 会展类宣传设计、二维动画制作、音视频采集与编辑、计算机绘图AutoCAD、图形图像处理、影视特效制作、三维数字技术、室内设计与装饰、矢量图形创意与制作</font>
+                </p>
+              </details>
+              </details>
+			     
+            </div>
+            <div class="col-l-4">
+              <p>微信联&面：<a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/images/add_card.png">名片</a>
+              </p>
+              <p>电话：<a target="_blank" href="tel:+86 17622737295">+86 1762273729#(#替5)</a>
+              </p>
+              <p>邮箱：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=p.mr@qq.com" target="_blank">p.mr@qq.com</a>
+              </p>
+              <p>微信：
+                <s>
+                  Rice-WeChat
+                </s>
+              </p>
+              <p>Boss直聘：
+                <s>
+                  求职主页
+                </s>
+              </p>
+            </div>
+            <div class="col-l-4">
+              <p>期望底&薪资：<del>4k</del>/（≥5k）/6k/7k~10k+（可面议/行业）</p>
+			   <details>
+                <summary>薪资说明：</summary>
+				<!-- 薪资说明
+                <p><font size="1" color="">
+				&#12288; 基于面试环节牵涉，个人微经历。同时市场与行业、工休等差异性因素；
+				也为了增加两者效率，减少因相关，所致问题与事宜，亦在一定程度上，能责所及内、对薪资有其明确要求。望所知与理解。
+				   </font></p>-->
+              </details>
+			   <details>
+                <summary>求职领域:</summary>
+              <!--<p>&#12288; 新/自媒体、影视媒体、教育培训、室内设计、互联网、电商、外贸、机械化数控... 其它</p>>-->
+			  </details>
+			  <!-- 职位规划 
+			  <details>
+                <summary>求职岗位：</summary>
+                <p>【参考职位】主管/经理、视频编辑、后期制作、网课制作、字幕制作、摄影/像、平面设计、三维建模/渲染、海外频道运营、（软件）讲师<s>CAD设计/制图</s>、Web前端、网站运维、(互联网)产品经理、电商运营<sub>（助理）</sub>、外贸运营<sub>（助理）</sub>、CNC数控、其它</p>
+              </details>
+			 -->
+              <details>
+                <summary>自我评价:</summary>
+				&#12288; 现实主义、轻简主义
+                      <!-- 详细的自我评价部分 
+				<p>
+                  <font size="1" color="">
+                    <p>生活上: 生活质朴简约、不吃辛辣食物＆大部分海产品、不玩游戏、不食烟酒......非社交软件控，交流方式偏向较原始短信＆电话
+                    <p>工作上: 浅偏型技术类、无事不缺勤，尽量对自工作负责，工作耿实上进，效率马虎稳定，团队协作把控意识 （注:现因眼睛问题，个人不能长时间看＆接触电脑(相对而言)）
+                  </font>
+                </p>-->
+              </details>
+              <p>▌<a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/Interview/index.html">面试问题</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 技能代码开始 -->
+      <section id="skills">
+        <div class="wrap">
+          <h2 class="title">参考技能</h2>
+          <div class="row scrollable">
+            <div class="col-s-6 col-m-4 center-fixed">
+              <!--原站样式<div class="skills-icon">
+                        <i class="fa fa-html5"></i>
+                    </div>-->
+              <div class="skills-title">
+                <h3>PS、PR、AE、AU、AI、FL、DW</h3>
+                <h5>30%~80%+<h5>
+              </div>
+            </div>
+			<div class="col-s-6 col-m-4 center-fixed">
+              <!--<div class="skills-icon">
+                        <i class="fa fa-css3"></i>
+                    </div>-->
+              <div class="skills-title">
+                <h3>Final Cut Pro</h3>
+                <h5>0%+</h5>
+              </div>
+            </div>
+			<div class="col-s-6 col-m-4 center-fixed">
+              <!--<div class="skills-icon">
+                        <i class="fa fa-css3"></i>
+                    </div>-->
+              <div class="skills-title">
+                <h3>DaVinci(达芬奇)、C4D、Blender</h3>
+                <h5>1%+</h5>
+              </div>
+            </div>
+            <div class="col-s-6 col-m-4 center-fixed">
+              <!--<div class="skills-icon">
+                        <i class="fa fa-css3"></i>
+                    </div>-->
+              <div class="skills-title">
+                <h3>CAD、3dsMax</h3>
+                <h5>30%-50%+</h5>
+              </div>
+            </div>
+            <div class="col-s-6 col-m-4 center-fixed">
+              <!--  <div class="skills-icon">
+                        <i class="fa fa-code"></i>
+                    </div>-->
+              <div class="skills-title">
+                <h3>Word、PPT、Excel</h3>
+                <h5>50%-80%+</h5>
+              </div>
+            </div>
+            <div class="col-s-6 col-m-4 center-fixed">
+              <!--  <div class="skills-icon">
+                        <i class="fa fa-code"></i>
+                    </div>-->
+              <div class="skills-title">
+                <h3>html、js、css</h3>
+                <h5>0~30%+</h5>
+              </div>
+            </div>
+          </div>
+          <center>
+            <p>
+              <font size="1" color="#696969">▶手机端 请左右滑动上文本 查看相关◀</font> <br/>
+			  <font size="1" color="#696969">备注：受限工作、软件版本、技术的更新、认知上的差异等，上述仅供参考</font>
+            </p>
+            <details>
+              <summary>参考证书</summary>
+              <p>证：【计算机Office二级 | <a href="http://ncre.neea.edu.cn/" target="_blank">证编：65561201467500</a>】、【CEAC平面设计(PS) | <a href="http://cert.exam.org.cn/?CerNum=14093739" target="_blank">证编：14093739 </a>】、【计算机调试员 | <a href="http://zscx.osta.org.cn/" target="_blank">证编：1776143001406695</a>】、 【C1驾驶证(待考)】、【腾讯&quot;云运维工程师      <!--  | <a href="https://cloud.tencent.com/edu/training" target="_blank">证编：</a> -->&quot;认证(待考)】</p>
+            </details>
+          </center>
+        </div>
+      </section>
+      <!-- 个人经历代码开始 -->
+      <section id="story">
+        <div class="wrap">
+          <h2 class="title">工作经历</h2>
+          <div class="row">
+            <div class="col-m-8">
+              <ul class="timeline">
+                <details>
+                  <summary>
+                    <font size="4" color="">
+                      <b>工作经历<sub>（简版）</sub>
+                      </b>
+                    </font>
+                  </summary>
+                  <li>2022/<p>
+                      <a href="resume/src/tjhpzblxs.html" target="_blank"></a>
+                    </p>
+                  </li>
+				  <li>2021/05-12【天津/河西区-国耀明医(互联网)医院-岗职:新媒体运营（主管）】/社招<p>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.html" target="_blank">详细参考(有图/较慢)</a> |
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.htm" target="_blank">详细参考(无图/快)</a>
+                    </p>
+                  </li>
+                  <li>2020/09-11【天津/和平区-中北国际旅行社-岗职:美工】/校习<p>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.html" target="_blank">详细参考(有图/较慢)</a> |
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.htm" target="_blank">详细参考(无图/快)</a> 
+                    </p>
+                  </li>
+                  <li>2020/07-07【天津/红桥区-（北方人才&汇聚人力资源集团）公共就业服务中心-岗:数字化档案整理】/校习<p>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.html" target="_blank">详细参考(有图/较慢)</a> |
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.htm" target="_blank">详细参考(无图/快)</a> 
+					</p>
+                  </li>
+                  <li>2019/01-01【山西/太原-千珏网络科技-岗:视频剪辑&amp;运营】<p>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.html" target="_blank">详细参考(有图/较慢)</a> |
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/workinfo/index.htm" target="_blank">详细参考(无图/快)</a> 
+                    </p>
+                  </li>
+                </details>
+                <details>
+                  <summary>
+                    <font size="4" color="">
+                      <b>展开/显示<sub>（在校版）</sub>
+                      </b>
+                    </font>
+                  </summary>
+				  <li>2018年9月4日: 高考（理科）结束后的两个月,自稀里糊涂的入学报到。不久，军训和学前教育开始...</li>
+                  <li>2018年10月:因相关，开始自学专业课程软件，如PS（基于CS6&正版序列号）、PR（基于CC2018）、AE(基于CC2018）等，同时学习新媒体内容（参考：两米青年（网搜）&腾讯课堂）和入门HTML。
+				    <p style="text-indent:2em;"><font style="line-height:1.5;">
+				      在投入大量时间和精力后（约持续1.5个学期）大部分获得较好的，熟练操作与掌握。且对线性编辑软件具备一定融会贯通思维；
+					  同因前期自学经验，在校协助老师上台，讲述"PS色阶"内容知识点，及对软件方面的协助<p>
+                      <a href="https://share.weiyun.com/VfZjNsz4" target="_blank">曾因参例作品</a> |
+					  <a href="https://appcasx1j5p1003.h5.xiaoeknow.com/v1/course/column/p_5eee288b39f71_yJAddfoN?type=3&resource_type=6&resource_id=p_5eee288b39f71_yJAddfoN&product_id=p_5eee288b39f71_yJAddfoN&app_id=appcAsX1J5p1003&share_user_id=u_60ac654586da8_0LRnjAvH7H&share_type=5&scene=%E9%82%80%E8%AF%B7%E9%93%BE%E6%8E%A5&sw=1" target="_blank">PS自学参考之一</a>
+				 </li>
+                  <li>2018年10月：投稿腾讯游戏类短视频，获得排名与取得奖励(18) <p>
+                      <a href="http://fn.qq.com/webplat/info/news_version3/10021/34544/34546/m22150/201810/768592.shtml" target="_blank">参链</a> |
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/qqmail_tencent.png" target="_blank">腾讯官邮</a> |
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/kuaidi_tencent.jpg" target="_blank">腾讯包裹</a> |
+                    </p>
+                  </li>
+                  <li>2018年 查找相关资源和教程，意外找到（中国科学技术大学）较内和好的资源网页；(哈尔滨工业大学（深圳）)WPS2019专业版自带sn，免广告[后补]；清华大学开源软件镜像站[后补]
+				  
+				  <p>
+                      <a href="http://openvpn.ustc.edu.cn/" target="_blank">科大源链接</a>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/360webcache.png" target="_blank">360快照截图</a>
+                      <a href="http://c.360webcache.com/c?m=611c5fb9837aba918c05fb61255a05c1&q=http%3A%2F%2Fopenvpn.ustc.edu.cn%2F&u=http%3A%2F%2Fopenvpn.ustc.edu.cn%2F" target="_blank">360快照</a> |
+                      <a href="http://nic.hitsz.edu.cn/zbrjxz.htm" target="_blank">哈大源链接</a>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/hebsz.png" target="_blank">截图</a> |
+					  <a href="http://www.neea.edu.cn/html1/report/1507/861-1.htm" target="_blank">WPS教育版</a>
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/ncre_wps_edu.jpg" target="_blank">截图</a> |
+					  <a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank">清华大学·软件镜像</a>
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/Tsinghua University_SoftwareWeb.jpg" target="_blank">截图</a>
+                   
+				   </p>
+                  </li>
+                  <li>2018年12月：为其需要，以简单粗暴速学为原则。在原者基础上，修剪PR2018速成教学，增添字幕、片头&amp;尾。平均时长2-4分钟，压制后（CRF21左右）上传在腾讯视频、YouTuBe、百度云等；此过程，有些类同，网课制作过程...<p>
+                      <a href="https://share.weiyun.com/5bGDT28" target="_blank">参链</a> |
+                      <a href="https://pan.baidu.com/s/1GYXZStesXU4tqfyxa0rNJA" target="_blank">源视频</a>
+                    </p>
+                  </li>
+                  <li>2019年1月：考核（约2-3次）加入&quot;甜饼字幕组&quot;Cookiesub (以动漫/美剧/电影为主(代表作品有："进击的巨人"、"变形金刚·领袖之证"))负责“英语字幕”时间轴，兼字幕的校对。熟悉了字幕组的工作流程和一些知识（编码、字幕格式、封装、压缩），同期简单自补字幕ass标签知识。后因时间原因退弃<p>
+                      <a href="https://weibo.com/cookiesub?is_all=1" target="_blank">官微博</a> |
+					  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/cookiesub.png" target="_blank">官微截图</a> |
+					  <a href="https://aegi.vmoe.info/docs/3.2/ASS_Tags/" target="_blank">Aegisub标签页</a> |
+                    </p>
+                  </li> 
+				   <details>
+                  <summary>2018-2019回望:</summary>
+				  &#12288; &#12288;2018-2019回望：时间点滴流逝着。生活与学习中，踩坑了很多。不知然间，
+				  每日趴在电脑前，多增了些白发、用眼过度，也近视的好生厉害， 
+				  以至于后来看电脑屏幕，眼睛就疼的厉害，留下了不该留下的问题... 
+                  慢慢的，买饭、取快递这些事情，都丢给小弟干活；
+                  <br/>
+				  &#12288; &#12288; 军训一定程度上，没有训练出坚强的毅力，但给其很大的帮助，对游戏的侵染也渐远...... 
+                  在实践中，学习和成长了很多，一台AMD机械的电脑，也用的"出神入化"。 
+                  大学印象中，较深刻的事情之一: 因当初自学花费了好多时间和精力，从高中时期，弄得"付费社群"运营工作，
+                  搁置沉底，使用的，第三方卡密支付交易平台(有卡啦-约3年)和账户，时间之久，不曾勤用，
+                  暂封禁。联系客服说明缘由后，说到的一句话，深于心：“你才上大学啊”感触颇多。
+                  虽然后期也跑路了（当时账户，约剩60-70元），但这个平台很好（对比早期的917平台及管理和客服），
+                  每次满100提现，可能是高中时期，快乐的事情之一，感谢陪伴。 生活中的事，相应的耽搁了不少，
+                  或是"鱼和熊掌不可兼得"，大道不可违。
+                  </p>
+				  </details>
+				  <br/>
+				  
+				  
+				  <li>2019年约3月：开始尝试，开始以“腾讯文档”记录所观电影，并开始计划性的观影：豆瓣排名Top250的影视和其它；期间，简了解和涉及一些该领域的内容（如Bt&磁力、聚合引擎、蓝光原盘、影视API接口、影视CMS）</li>
+                  <li>2019年4月13日：摸索尝试搭建独立网站博客，因自身经验不足，失败了N次，最终幸运成功（Hexo架构、托管GitHub、Markdown语法写作）并配置&解析主域名(因搭载免费域名，固无配置优化SEO&百度收录)。</li>
+                  <li>2019年5月：简修静态下载网页，基于前期收集和验证的专业软件，为同班同学，提供课程前阶段，使用的专业软件，多为一键集成，简化安装流程，方便使用。<p>
+                      <a href="https://kanke-1252777009.cos.ap-beijing.myqcloud.com/lab365.github.io-master/index.html" target="_blank">参链</a>
+                    </p>
+                  </li>
+                  <li>2019年：学校组织参观，与专业相近的领域制作公司，写字楼办公；涉及影视前/后期；据悉参与过，“漫威”-“美国队长”电影的某项目VFX(特效)制作部分（保密性质）；
+				  （软件如Nuke、Avid、PS、PR、AE、Blender、C4D、PFtrack、达芬奇、Unity、Houdini、Clarisse、ZBrush、Mudbox、Combustion等；
+				   渲染类如Yeti、Xgen、Nhair、Arnold、Redshift、V-Ray等；材质贴图Substance Painter等）同时涉及出书和内容制作及培训。
+				   电脑配置占比高，工作站多台协同。正版授权密钥1v多台软件。
+				   </li>
+                  <li>2019年5月近底至6月中旬前：在校着手创建社团，因时间冲突和经验不足，最终无果(期间提交过资料) 感:为人师者，应有其师度 <p>
+				      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/st.jpg" target="_blank">参考</a> </li>
+                  <li>2019年6月偏后旬:带领同班级组员和兼小组长，分配、参与、指导小组工作及“会展课程PPT”内容的创作。后经:外聘指导老师的审评，取得第二名（共6组，每组6人）；至后期，也负责固定小组的组员，学期作业汇集与申报提交。</li>  
+                  </p>
+                  <li>2019年9月：收集相关资料，协调时间，一月有余。考取计算机二级证书（官网成绩公布日:11.11） </li>
+                  <li>2019年10月2日：周末利用时间和同学到婚庆类公司兼职，有些累但也值 （记:165R/天）。 或是在校唯一的一次:（清晨）搭乘天津最早的地铁＆踏出校门 </li>
+                  <li>*2019年11月27日:在校，懵懵懂懂，第一次自主尝试找工作(BoSS直聘-兼职类)，经历笔试&amp;面试，起薪≥3k月，HR很热情【天津/西青-软通动力-岗:微博运营】。
+				  （因多种限制和因素等未录；后在校实习平台站点，得知，此也是校企合作公司之一；同因当时啥也没带，有感，而制网端简历）<p>
+                      <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/other/ohtml/tjxqxlwbyy.html" target="_blank">参考</a>
+                    </p>
+                  </li>
+                  <li>2019年12月2日：路途1h多的地铁和公交，会见做抖音项目（代运营）工作室的经理(北京字节跳动公司的签约合同，即甲方提出规定时间内，运营的账号突破粉丝关注数等要求，乙方完成并交付)，了解相关 【天津/滨海新区】</li>
+                  <li>2020年1月14日：一份短期兼职工作。但因前期相关没问清和自身原因，实际中，致不必要的问题，中途离【山西/太原-千珏网络科技-岗:视频剪辑&amp;运营】</li>
+                  <li>2021年5月底六月初：久违而短暂的开学；此阶段提供各科网课答案供同学参考；通过QCR文字识别、清晰长截图、Kiwi浏览器（模仿PC桌面端、插件脚本解决文本复制）及“学小易”查题。</li>
+                  <li>2020年6月17日：在校整个期间，穿着拖鞋，操场一次性跑步1h。过了平常30分的记录。<p>
+                  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/keep_run.png" target="_blank">参考</a></p></li>
+                  <li>2020年6月24日：报&参学校一个“创新创业”的活动，第一次写“BP计划书”和弄相关（如了解企创、过程、架构、申报材料等）。
+				  因种种原因，隐落，后离校，项目也搁浅...
+				  记得入校后，不久的学前教育课。一位同专业创业成功的前者，在礼堂，行至前排纸上答题的俺，说自己某题答错了，至今，也不知哪里。
+				  <font size="2" color="">
+				  <p>部分内容参考(截图): <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/Baidu%20enterprise%20network%20disk.png" target="_blank">百度企业网盘</a> |
+				  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/TencentEnterpriseEmail.png" target="_blank">企业邮箱</a> | 
+				  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/WechatBusinessPay.png" target="_blank">微信商户版</a>
+				  <p> </font></li>
+				  </li>
+                   <li>*2020年7月5日：炎炎正午,稀里糊涂，夹杂着复杂的心情和滋味，短暂的在校时间和学习结束。有些不舍，但也意义上的结束了。“职教云、蓝墨云、超级校园、学习通、超级课程表”也暗淡下去。也许某些东西并不完美，好的大学环境和资源，或许比那一纸文凭的更加珍贵，但也许多了一丝丝选择的机会&gt;2020年发生了好多，或是不应发生的，但也印刻在不同人群之中... <p>
+                      致敬：......<br/>
+                      英语老师：让其第一学期没挂科<br/>
+                      美术老师：课堂上对工作薪资谈要<br/>
+                      外聘老师：对相关方面的指点<br/>
+                      辅导员：  在校的国家助学金协助<br/>
+					  <font size="2" color="">
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/01.jpg" target="_blank">学校</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/02.jpg" target="_blank">宿舍楼下</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/03.jpg" target="_blank">常去的食堂</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/04.jpg" target="_blank">晨的小吃后街</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/05.jpg" target="_blank">后期常去的图书馆</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/06.jpg" target="_blank">环游的猫咪</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/07.jpg" target="_blank">晚归的宿舍</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/08.jpg" target="_blank">疫情开学后的桌子</a> |
+                        <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/schoolimg/09.jpg" target="_blank">打包回村的书籍</a>
+                      </font>
+					   <details>
+                  <summary>2019-2020年回眸:</summary>
+					  &#12288; &#12288;2019-2020年回眸: 偷溜走的时光，把一切显的都那么短暂。这几年，过的真快，真紧……；很多的在校原计划，也随疫情的变化而为之没落（如:计划大二下学期的英语四级、专升本的把控、部分项目的实施，如：TikTok（抖音海外版））理论3年的在校时间，也因疫情，实际在校被压缩的平均不到1.5年。想如“傅雷家书”似多说些什么，但却不知该说些什么，且行且珍惜，在努力。</li>
+                      <details>
+                        <summary>
+                          <font size="3" color="">☇所学专业软件版本:</font>
+                        </summary>
+                        <p style="text-indent:2em;">
+                          <font style="line-height:1.5;">
+                            Adobe PhotoshopCS6(PSCS6)、Adobe After Effects CS4(AECS4)、Adobe Premiere Pro CS4(PRCS4)、 Adobe Flash CS6(FlashCS6)、Adobe Audition CS6(FLCS6)、Adobe Illustrator CS6(AICS6)、Autodesk 3dsMax 2012( 3dsmax) 、Autodesk AutoCAD 2005/6（CAD）、Microsoft Word/PPT/EXCEL2010
+                      </details>
+                    </p>
+                  </li>
+                  <li>2020年7月5日:再见...那一段距离（时光无言，却铭记了曾经。岁月无声，却写意了一切）
+                </details>
+                <details>
+                  <summary>
+                    <font size="4" color="">
+                      <b>展开/显示<sub>（实习版）</sub>
+                      </b>
+                    </font>
+                  </summary>
+                  <li>2020年7月：离校后，于7.6到校企合作单位，人事处报到和熟悉；7.8实际入职，7.9迟到少许（单程路程约2h+），后因相关牵连而退【天津/红桥区-北方人才&amp;汇聚人力资源集团-岗:档案整理和加工】</li>
+                  <li>2020年8月：自投简历入职校企合作单位，【天津/和平区-中北国际旅行社-岗职:美工&amp;公众号推文&amp;小程序协助】</li>
+                </details>
+                <details>
+                  <summary>
+                    <font size="4" color="">
+                      <b>展开/显示<sub>（社会版）</sub>
+                      </b>
+                    </font>
+                  </summary>
+				  <details>
+                        <summary>
+                          <font size="3" color="">☇2020-2021年度<sub>（暂停更新）</sub></font>
+                        </summary>
+                        <p style="text-indent:2em;">
+                          <font style="line-height:1.5;">
+                          <li>2020.10.28【天津/西青学府慧谷工业园-久泽永坤机械科技有限公司-岗:机械化CNC数控-3800元/月（实习岗）-房（400/月）＆饭（次月）补、加班20元/小时、六险一金、早8晚5、工六休一】经人内推，面试后通过，但因在校实习期未完，并未换。<p>
+                          <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/file/tjxqgyy.jpg" target="_blank">参图</a> </p> </li>
+				          <li>2021.01.09【天津-群立数字科技有限公司-3dsmax建模类＆渲染（实习岗）-3/4k+/月-提供住宿】 Boss直聘；因个人因素放弃。</li>
+                          <li>2021.01.16【天津/西青/华苑办公楼-（北京）亿玛科技有限公司-岗:信息流视频剪辑-5K+月、早9晚6、五险一金、工五休二、一天出量7-8个/视频】Boss直聘；因个人（眼睛）因素放弃。</li>
+                      </details>
+              
+                </details>
+                <li></li>
+              </ul>
+            </div>
+            <!--  中间布局位置右面图
+      <div class="col-m-4 center-fixed"> 
+       <img src="images/story.png" /> 
+      </div>-->
+          </div>
+        </div>
+      </section>
+      <!-- 参考作品 -->
+      <section id="works">
+        <div class="wrap">
+          <h2 class="title">参例作品</h2>
+          <div class="row">
+            <div class="col-s-6">
+              <div class="works-item">
+                <img src="images/video.png" />
+                <p>
+                  <a href="https://music.163.com/#/video?id=B77EFFAFE20EC73E4FE67BA392B89FE8" target="_blank">简视频剪辑制作&middot;之一</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-s-6">
+              <div class="works-item">
+                <img src="images/wbw.png" />
+                <p>
+                  <a href="https://mp.weixin.qq.com/s/5Z9OQxKE2B0aJL_O3WX3iw" target="_blank">微信公众号推文&middot;短篇</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-s-6">
+              <div class="works-item">
+                <img src="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/images/search.png" />
+                <p>
+                  <a href="https://kanke-1252777009.cos.ap-beijing.myqcloud.com/homeip.github.io-main/index.html" target="_blank">Web网站前端&middot;静态聚合导航页</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-s-6">
+              <div class="works-item">
+                <img src="images/cad.png" />
+                <p>
+                  <a href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/works/index.html" target="_blank">CAD&amp;3dsmax室内设计/装饰</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <center>
+            <p> |——<a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/works/index.html">作品集·聚合页</a>——|
+            </p>
+          </center>
+        </div>
+      </section>
+      <embed src="/1.mp3" autostart="true" loop="true" hidden="true" />
+      <!-- 关于附件内容-->
+      <section class="content-d" id="team">
+        <div class="wrap">
+          <h2 class="title">关于其它</h2>
+          <div class="row">
+            <div class="col-m-6">
+              <p>下载&预览&middot; <!--<a target="_blank" href="#">-->Pdf简约简历</a>
+              </p>
+              <p>看过&middot;<a target="_blank" href="https://docs.qq.com/sheet/DY0lRQXRJZHJzRklx?opendocxfrom=admin&amp;coord=A1%24A1%240%240%240%240&amp;tab=BB08J2">电影 </a>
+              </p>
+              <p>习惯/爱好:午觉、羽毛球、阅读、听书、喝茶、影&amp;音</p>
+			  </p>
+              <p>关于&middot;<a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/other/quotedtext/index.html">大学自鉴</a> | <a target="_blank" href="src/explain/index.html">工作中软件说明</a></p>
+              </p>
+              <p>其它：社群运营&amp;架构、电商、科学(google)上网、电脑/网络技术、网络(内容)审核、
+                <s>
+                  机械化数控
+                </s>、素材(网络)收集、</p>
+            </div>
+            <div class="col-m-6 center">
+              <img src="images/team.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 底部代码开始 -->
+      <footer>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=5308028&amp;auto=0&amp;height=32"></iframe>
+        <p>
+          <font size="1" color="">≧◔◡◔≦提供就近宿舍或是个有内涵的公司≧◔◡◔≦</font>
+        </p>
+        <font size="1" color="">
+          <p>
+            <a target="_blank" href="https://www.chsi.com.cn/">学信网</a> |
+            <a target="_blank" href="http://www.gsxt.gov.cn/index.html">企业公示</a> |
+            <a target="_blank" href="http://si.12333.gov.cn/index.jhtml">社保</a> |
+            <a target="_blank" href="https://www.baidu.com/s?wd=%E7%A8%8E%E5%90%8E%E5%B7%A5%E8%B5%84%E8%AE%A1%E7%AE%97%E5%99%A8">个税</a> |
+            <a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/wagecard/index.html">工资卡</a> 
+		  </p>
+          <!-- 外部天气 -->
+          <iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=1&v=0&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=180&h=36&align=center"></iframe>
+          <p>
+            <!--站点创建时间记录展示 -->
+            <span id="showsectime" style="color:#C2C2C2;"></span>
+            <script type="text/javascript">
+              function NewDate(str) { 
+              str = str.split('-'); 
+              var date = new Date(); 
+              date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+              date.setUTCHours(0, 0, 0, 0); 
+              return date; 
+              } 
+              function showsectime() {
+              var birthDay =NewDate("2019-11-29");
+              var today=new Date();
+              var timeold=today.getTime()-birthDay.getTime();
+              var sectimeold=timeold/1000
+              var secondsold=Math.floor(sectimeold);
+              var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+              var daysold=Math.floor(e_daysold);
+              var e_hrsold=(daysold-e_daysold)*-24;
+              var hrsold=Math.floor(e_hrsold);
+              var e_minsold=(hrsold-e_hrsold)*-60;
+              var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+              document.getElementById("showsectime").innerHTML = "已运行："+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+              setTimeout(showsectime, 1000);
+              }showsectime();
+            </script>
+          </p>
+          <a target="_blank" href="https://www.upyun.com">
+            <img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN/又拍云_logo.png" align="absmiddle" width="59px" height="30px" bk-image="active">
+          </a> |
+          <script type="text/javascript" src="https://js.users.51.la/20887965.js"></script> 
+		  </br>
+		  <a target="_blank" href="https://love-1252777009.cos-website.ap-nanjing.myqcloud.com">ღi</a> |
+          <a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/timeline/index.html">日志</a> |
+		  <a target="_blank" href="https://winsoft-1252777009.cos-website.ap-beijing.myqcloud.com">软件</a> |
+		  <a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/other/enclosure/index.html">附件</a> |
+		  <a target="_blank" href="https://myresume-1252777009.cos.ap-beijing.myqcloud.com/src/other/about/index.html">关于</a> 
+		  
+          <!-- 蓝色又拍云logo <a target="_blank" href="https://www.upyun.com"><img src="https://img.qigehl.com/09/upyun.png" align="absmiddle" width="59px" height="30px" /></a>  -->
+      </footer>
+	  <center>
+  <p><a target="_blank" href="https://beian.miit.gov.cn/"><font size="" color="#3e4145">津ICP备xxxxx号-1</font></a> </p> 
+	 </center>
+      <!-- 接邻底端-网页底部文本样式
+      <div class="gcs-footer">
+        <div class="footer-top">
+				 <a target="_blank" href=""><font size="3" color="#3e4145"></font></a> 
+          <!-- 底端时间加载
+	 <span id="cg">2021/4/21/ AM12:00:00</span> 
+<script>
+setInterval("cg.innerHTML=new Date().toLocaleString()",1000);
+</script>  -->
+        </div>
+       </div>
+        <!-- 底部代码结束 -->
+        <script data-cfasync="false" src="js/email-decode.min.js"></script>
+        <script src="js/kico.js"></script>
+        <script src="js/paul.js"></script>
+        <script type="text/javascript">
+          /*7Core-CN - 网页鼠标点击特效（爱心）*/
+                  !function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+        </script>
+        <!-- 黑&白夜模式js 首部link后四段 1加载 -->
+        <script src="js/uikit.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+      </font>
+      </font>
+    </main>
+  </body>
+</html>
