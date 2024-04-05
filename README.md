@@ -1,8 +1,8 @@
 ### 360OS-Backups（Unofficial)
 360/Qiku Mobile Android: OS、Web、Rom(CPB/ZIP)、Other
 ### 360手机刷机资源下载
-1.360手机资源站（推荐）：https://360rom.github.io
-2.360手机资源站：https://360iphoneos.github.io/
+* 360手机资源站（推荐）：https://360rom.github.io
+* 360手机资源站：https://360iphoneos.github.io/
 ### 360手机资源分享
 360奇酷刷机 360手机刷机包 360刷机工具 360手机刷机资源下载分享 360手机线刷包CPB  360手机救砖包  360手机纯净系统  360手机降级包  360手机卡刷包  360手机固件 QIKU Download Assistant  360手机twrp  360手机root  360手机基带NV 360手机位置穿越  360手机高通驱动  360手机刷机解锁
 # 360手机机型
